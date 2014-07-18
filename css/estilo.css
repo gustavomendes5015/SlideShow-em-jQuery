@@ -1,0 +1,29 @@
+section {
+            width: 1000px;
+            height: 500px;
+            border: 5px solid #000;
+        }
+        img {
+            width: 1000px;
+            height: 500px;
+        }
+        .btn1:hover, .btn2:hover {
+            background-color: white;
+        }
+        .btn1, .btn2 {
+            position: absolute;
+            font-size: 40px;
+            color: coral;
+            font-weight: bold;
+            display: none;
+        }
+        .btn2 {
+            margin-left: 50px;
+        }
+        .info {
+            position: absolute;
+            top: 670px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
