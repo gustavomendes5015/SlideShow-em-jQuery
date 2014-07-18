@@ -1,6 +1,9 @@
-SlideShow-em-jQuery
+SlideShow em jQuery
 ===================
 
 Sistema de Slideshow em jQuery
-Por Gustavo Mendes
-Email: gugutb@hotmail.com
+![alt tag](http://i.imgur.com/4KRHr4u.jpg)
+
+Author
+==================
+Gustavo Mendes - gugutb@hotmail.com
