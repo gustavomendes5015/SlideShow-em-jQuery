@@ -1,9 +1,9 @@
 $(document).ready(function() {
     efeito();
     $("section").hover(function() {
-        $(".btn1, .btn2").show();
+        $(".btn1, .btn2, .contar").show();
     }, function() {
-            $(".btn1, .btn2").hide();
+            $(".btn1, .btn2, .contar").hide();
         }
     );
     $(".btn1").click(function() {
@@ -15,6 +15,7 @@ $(document).ready(function() {
 });
 
 var pos = 0;
+var aux = 1;
 var um, dois;
 var imagens = Array(
     'img1',
@@ -25,26 +26,35 @@ var imagens = Array(
 function efeito() {
     if(pos > (imagens.length)-1) {
         pos = 0;
+        aux = 1;
     } else if(pos < 0) {
         pos = (imagens.length)-1;
+        aux = imagens.length;
     }
-    $("#imagem").attr("src", 'img/' + imagens[pos] + '.jpg').
+    $(".contar").text(aux + '/' + imagens.length);
+    $(".imagem").attr("src", 'img/' + imagens[pos] + '.jpg').
         slideDown();
-    um = setTimeout(aparecer, 5000);
+    um = setTimeout(aparecer, 1000);
 }
+
 function aparecer() {
-    $("#imagem").slideUp();
+    $(".imagem").slideUp();
     dois = setTimeout(efeito, 500);
     pos ++;
+    aux ++;
 }
+
 function proxima() {
-    pos++;
+    pos ++;
+    aux ++;
     clearTimeout(um); 
     clearTimeout(dois);   
     efeito();
 }
+
 function anterior() {
-    pos--;
+    pos --;
+    aux --;
     clearTimeout(um); 
     clearTimeout(dois);
     efeito();
