@@ -1,17 +1,27 @@
-section, .imagem {
-    width: 500px;
-    height: 300px;
-    border: 1px solid black;
+.slide, .inicio, .rodape, .imagem {
+    width: 600px;
 }
 
-.btn1 :hover, .btn2 :hover {
-    background-color: white;
-    border: 3px solid #ddd;
+.slide {
+    margin-top: 50px;
+}
+
+.rodape {
+    background-color: black;
+}
+
+.inicio, .imagem {
+    height: 300px;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: lightblue;
 }
 
 .btn1, .btn2 {
+    border: 1px solid black;
     position: absolute;
-    font-size: 40px;
+    font-size: 35px;
     color: coral;
     font-weight: bold;
     display: none;
@@ -22,11 +32,7 @@ section, .imagem {
 }
 
 .contar {
-    position: absolute;
-    font-size: 22px;
-    top: 280px;
-    font-weight: bold;
-    font-family: tahoma;
-    color: orange;
-    display: none;
+   color: white;
+   font-size: 18px;
+   display: none;
 }
