@@ -1,4 +1,4 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
     //Quando documento estiver pronto
     efeito();//chamar função responsável pelos efeitos
     $(".slide").hover(function() {
