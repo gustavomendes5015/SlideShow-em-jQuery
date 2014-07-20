@@ -40,7 +40,7 @@ function efeito() {
     //atribuir o texto na class contar exibindo imagem atual e legenda
     $(".imagem").attr("src", 'img/' + imagens[pos][0]). //setando o atributo src das imagens, de acordo com a posição do array
         slideDown(); //efeito fadeIn
-    um = setTimeout(aparecer, 2000); //chamando timer responsável pelo efeito fadeOut
+    um = setTimeout(aparecer, 5000); //chamando timer responsável pelo efeito fadeOut
 }
 
 function aparecer() {
