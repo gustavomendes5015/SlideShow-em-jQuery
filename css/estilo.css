@@ -1,3 +1,7 @@
+body {
+    background-color: #ddd;
+}
+
 .slide, .inicio, .rodape, .imagem {
     width: 600px;
 }
@@ -8,6 +12,7 @@
 
 .rodape {
     background-color: black;
+    border: 1px solid white;
 }
 
 .inicio, .imagem {
@@ -15,7 +20,9 @@
 }
 
 .btn1:hover, .btn2:hover {
-    background-color: lightblue;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid coral;
 }
 
 .btn1, .btn2 {
